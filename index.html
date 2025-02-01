@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Hola Mundo con Enlace</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .hola-mundo {
+            font-size: 3rem;
+            white-space: nowrap;
+            animation: moverTexto 5s linear infinite;
+        }
+
+        .hola-mundo a {
+            color: white; /* Color del texto del enlace */
+            text-decoration: none; /* Quita el subrayado del enlace */
+        }
+
+        .hola-mundo a:hover {
+            color: #61dafb; /* Cambia el color al pasar el mouse */
+        }
+
+        @keyframes moverTexto {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hola-mundo">
+        <a href="https://www.ejemplo.com" target="_blank">Hola Mundo</a>
+    </div>
+</body>
+</html>
